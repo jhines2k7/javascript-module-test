@@ -3,14 +3,14 @@
  */
 
 var NoNamespace = (function () {
-    var name;
+    var _name;
 
-    function NoNamespace(newName) {
-        name = newName;
+    function NoNamespace(name) {
+        _name = name;
     }
 
     NoNamespace.prototype.saySomething = function() {
-        console.log('Look ' + name + ', no namespace!');
+        console.log('Look ' + _name + ', no namespace!');
     };
 
     return NoNamespace;
