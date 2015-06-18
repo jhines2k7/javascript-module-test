@@ -9,10 +9,16 @@
 
 	<script src="one.js"></script>
 	<script src="two.js"></script>
+    <script src="no-namespace.js"></script>
 
 	<script>
-	var smile = new Hello.Smile('James');
-	var fown = new Hello.Frown('James');
+	    var smile = new Hello.Smile('James');
+	    var frown = new Hello.Frown('James');
+
+		var noNamespace = new NoNamespace('James');
+        noNamespace.saySomething();
+
+        console.log(noNamespace.name);
 	</script>
 </body>
 </html>
