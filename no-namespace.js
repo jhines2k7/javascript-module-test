@@ -4,8 +4,10 @@
 
 var NoNamespace = (function () {
     var _name;
+    var _privArray;
 
     function NoNamespace(name) {
+        this.pubArray = [];
         _name = name;
     }
 
